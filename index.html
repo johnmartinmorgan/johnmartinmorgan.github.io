@@ -9,22 +9,13 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <style>
-	a.btn,a.nav-link{color:white}*{font-family:Archivo,sans-serif}nav{background-color:#00397a}a.btn{background-color:#000}section#hero{background-color:#057af0}
-	i{
-		font-size: 2.25em;
-		color: white;
-	}
-	.card{
-		background-color: #00397A;
-		color: white;
-		border-color: #00397A;
-	}
+	.card,a.btn,a.nav-link,i{color:#fff}*{font-family:Archivo,sans-serif}nav,section#features{background-color:#00397A}a.whatsapp{background-color:#25D366;color:#075E54}a.btn:hover{background-color:#128C7E;color:#DCF8C6}section#hero{background-color:#024fa1}i{font-size:2.25em}.card{background-color:#024fa1;border:none}
 </style>
 <body>
 
 	<nav class="navbar navbar-expand-lg navbar-dark">
-		<div class="container px-5">
-			<a class="navbar-brand" href="index.html">Start Bootstrap</a>
+		<div class="container">
+			<a class="navbar-brand fw-bold" href="index.html">John Morgan</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -39,45 +30,62 @@
 	<section id="hero" class="text-light p-5">
 		<div class="container">
 			<div class="d-sm-flex">
-				<div>
-					<h1>John Morgan</h1>
+				<div class="col-sm-12 col-md-6 text-sm-center text-md-start">
+					<h1>Presencia online para emprendedores</h1>
 					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, aspernatur!</p>
-					<a href="" class="btn btn-lg shadow">Gadamn</a>
+					<a href="" class="btn whatsapp btn-lg shadow">WhatsApp
+					</a>
 				</div>
-				<img class="img-fluid w-50 d-none d-sm-block" src="https://placehold.co/500x300" width="500" height="300" alt="">
+				<div class="col-sm-12 col-md-6">
+					<img class="img-fluid d-none d-md-block" src="https://placehold.co/500x300" width="500" height="300" alt="">
+				</div>
 			</div>
 		</div>
 	</section>
 	
 	<section id="features" class="p-5">
+		<div class="container text-sm-center text-md-start">
+			<div class="row g-4">
+				<div class="col-md">
+					<div class="card">
+						<div class="card-body p-4">
+							<i class="bi-alarm"></i>
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="card">
+						<div class="card-body p-4">
+							<i class="bi-alarm"></i>
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="card">
+						<div class="card-body p-4">
+							<i class="bi-alarm"></i>
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="info" class="p-5 bg-info">
 		<div class="container">
-			<div class="row">
-				<div class="col-md">
-					<div class="card mb-3">
-						<div class="card-body">
-							<i class="bi-alarm"></i>
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						</div>
-					</div>
+			<div class="row align-items-center justify-content-between">
+				<div class="col-sm-12 col-md-6">
+					<img class="img-fluid d-none d-md-block" src="https://placehold.co/400x300" width="400" height="300" alt="">
 				</div>
-				<div class="col-md">
-					<div class="card mb-3">
-						<div class="card-body">
-							<i class="bi-alarm"></i>
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="card mb-3">
-						<div class="card-body">
-							<i class="bi-alarm"></i>
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						</div>
-					</div>
+				<div class="col-sm-12 col-md-6 p-5">
+					<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque consequuntur sunt atque assumenda recusandae autem quisquam voluptate iusto aliquid.</p>
+					<a href="" class="btn btn-lg">shoff</a>
 				</div>
 			</div>
 		</div>
