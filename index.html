@@ -22,9 +22,7 @@
 
 <style>
 
-	*{font-family:Archivo,sans-serif}nav{background-color:#002c66}.nav-link{color:#fff}.hero{padding-top:12rem;padding-bottom:8rem;text-align:center;color:#fff;background-image:url("assets/hero-bg.webp");background-repeat:no-repeat;background-attachment:scroll;background-position:center center;background-size:cover}.hero .hero-heading{font-size:3.25rem;font-weight:600;line-height:3.25rem;margin-bottom:2rem;background-color:#00397a;padding:5px 2px}section#objetivo{background-color:#00397a;color:#fff;padding:8em 0}.btn-whatsapp{background-color:#25d366;border-color:#25d366;color:#000}.btn-whatsapp:hover{background-color:#075e54;border-color:#075e54;color:#fff}
 
-	@media (max-width:575px){.hero{padding-top:14rem;padding-bottom:9rem}.hero .hero-heading{font-size:4rem;line-height:4.5rem;margin-bottom:3rem}}@media (min-width:576px){.hero{padding-top:14rem;padding-bottom:9rem}.hero .hero-heading{font-size:4rem;line-height:4.5rem;margin-bottom:3rem}}@media (min-width:768px){.hero{padding-top:14rem;padding-bottom:9rem}.hero .hero-heading{font-size:4rem;line-height:4.5rem;margin-bottom:3rem}}
 
 </style>
 <body>
@@ -53,32 +51,92 @@
 
 	<header class="hero">
 		<div class="container">
-			<h1 class="hero-heading">La presencia online que su negocio necesita</h1>
-			<a class="btn btn-whatsapp btn-lg" href="#services">Contactar</a>
+			<div class="row align-items-center">
+				
+				<div class="col-lg-6">
+					<h1 class="display-5 fw-bold pb-2 lh-1">La presencia online que su negocio necesita</h1>
+					<div class="gap-2 my-4 d-md-flex justify-content-md-start">
+						<a class="btn btn-whatsapp btn-lg px-4 me-md-2">Contactar</a>
+					</div>
+				</div>
+				<div class="col-10 col-sm-8 col-lg-6">
+					<img class="shadow rounded d-block img-fluid" src="assets/hero-img-blue.webp" alt="Hero image" width="700" height="500" loading="lazy">
+				</div>
+			</div>
 		</div>
 	</header>
 
-	<section id="servicios" class="container py-5 my-5">
+	<section class="container py-5 my-5">
 		<div class="row gx-5">
 			<div class="col-lg-4 mb-5 mb-lg-0">
 				<img class="mb-3" src="assets/google.svg" alt="Logo" width="50" height="50">
 				<h2 class="h4 fw-bolder">Sitios web</h2>
-				<p>Adquisición de dominio y hosting. Diseño de sitio, sea autoadministrable o landing page. Optimización para motores de búsqueda y de experiencia de usuario.</p>
+				<p class="lead">Adquisición de dominio y hosting. Diseño del sitio web. Optimización para motores de búsqueda y de experiencia de usuario.</p>
 			</div>
 			<div class="col-lg-4 mb-5 mb-lg-0">
 				<img class="mb-3" src="assets/maps.svg" alt="Logo" width="50" height="50">
 				<h2 class="h4 fw-bolder">Perfil de Negocio y Google Maps</h2>
-				<p>Alta en Google MyBusiness para negocios a la calle. Configuración del perfil en Google Maps con datos actualizados e imágenes.</p>
+				<p class="lead">Alta en Google MyBusiness para negocios a la calle. Configuración del perfil en Google Maps con datos actualizados e imágenes.</p>
 			</div>
 			<div class="col-lg-4">
 				<img class="mb-3" src="assets/ads.svg" alt="Logo" width="50" height="50">
 				<h2 class="h4 fw-bolder">Anuncios en Google</h2>
-				<p>Displays publicitarios en múltiples formatos dentro del buscador más popular del mundo, en el momento en que sus clientes lo buscan.</p>
+				<p class="lead">Displays publicitarios en múltiples formatos dentro del buscador más popular del mundo, en el momento en que sus clientes lo buscan.</p>
 			</div>
 		</div>
 	</section>
 
-	<section id="objetivo" class="my-2 align-items-center">
+	<section id="carrusel" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+		
+				<div class="container">
+				<div class="carousel-caption text-start">
+					<h1>Facilidad y accesibilidad de pago</h1>
+					<p>Los servicios se adaptan al presupuesto sin sacrificar calidad.</p>
+					<p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+				</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+		
+				<div class="container">
+				<div class="carousel-caption text-start">
+					<h1>Another example headline.</h1>
+					<p>Some representative placeholder content for the second slide of the carousel.</p>
+					<p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+				</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+				<div class="container">
+					<div class="carousel-caption text-start">
+						<h1>One more for good measure.</h1>
+						<p>Some representative placeholder content for the third slide of this carousel.</p>
+						<p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	</section>
+
+	<section class="align-items-center">
 		<div class="container">
 			<div class="row gx-5">
 				<div class="col-lg-4 mb-5 mb-lg-0">
@@ -104,7 +162,7 @@
 							<p class="mb-0">Estudios jurídicos, firmas de abogados, estudios contables y consultores.</p>
 						</div>
 						<div class="col h-100">
-							<img class="img-fluid rounded" src="assets/servicio-4.webp" width="400" height="200" alt="Imagen ilustrativa">
+							<img class="img-fluid rounded" src="https://placehold.co/400x200" width="400" height="200" alt="Imagen ilustrativa">
 							<h2 class="mt-3 h5">Organizaciones sociales</h2>
 							<p class="mb-0">Clubes deportivos, clubes sociales, Organizaciones No Gubernamentales y sin fines de lucro.</p>
 						</div>
@@ -142,7 +200,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8 col-xxl-6">
 					<div class="text-center my-5">
-						<h1 class="fw-bolder mb-3">A un mensaje de distancia de una nueva cara para su negocio</h1>
+						<h2 class="fw-bolder mb-3">A un mensaje de distancia de una nueva cara para su negocio</h2>
 						<p class="lead fw-normal text-muted mb-4">¡No dude en contactarse! Asesoramiento inicial sin cargo.</p>
 						<a class="btn btn-whatsapp btn-lg" href="#scroll-target">Read our story</a>
 					</div>
@@ -154,7 +212,6 @@
 	<footer class="container">
 		<div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
 		  <p class="col-md-6 mb-0">John Morgan &copy; 2023</p>
-		  <span>Crédito imagen header: ceo-review.com</span>
 		</div>
 	</footer>
 
