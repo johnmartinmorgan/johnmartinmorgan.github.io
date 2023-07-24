@@ -1,0 +1,66 @@
+/* MEDIA QUERIES */
+
+/* 
+sm - 576
+md - 768
+lg - 992
+xl - 1200 
+*/
+
+@media (max-width: 575px) {
+
+	.hero {
+	  padding-top: 14rem;
+	  padding-bottom: 9rem;
+	}
+  
+	.hero .hero-heading {
+	  font-size: 4rem;
+	  line-height: 4.5rem;
+	  margin-bottom: 3rem;
+	}
+	
+  }
+  
+  @media (min-width: 576px) {
+	
+	.hero {
+	  padding-top: 14rem;
+	  padding-bottom: 9rem;
+	}
+  
+	.hero .hero-heading {
+	  font-size: 4rem;
+	  line-height: 4.5rem;
+	  margin-bottom: 3rem;
+	}
+
+	.carousel-caption p {
+		margin-bottom: 1.25rem;
+		font-size: 1.25rem;
+		line-height: 1.4;
+	}
+  
+  }
+  
+  @media (min-width: 768px) {
+  
+	.hero {
+	  padding: 8rem 0rem 4rem 0rem;
+	}
+  
+	.hero .hero-heading {
+	  font-size: 4rem;
+	  line-height: 4.5rem;
+	  margin-bottom: 3rem;
+	}
+  
+  }
+  
+  @media (min-width: 992px) {
+	
+  }
+  
+  @media (min-width: 1200px) {
+	
+  }
