@@ -33,6 +33,18 @@ nav {
 }
 
 /* SECTIONS */
+section#servicios {
+  min-height: 50vh;
+}
+
+section#showcase {
+  min-height: 100vh;
+}
+
+section#beneficios {
+  min-height: 100vh;
+}
+
 section#objetivo {
 	background-color: #00397A;
 	color: white;
