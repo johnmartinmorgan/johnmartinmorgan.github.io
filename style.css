@@ -10,3 +10,30 @@
 body {
     background-color: lightyellow;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    max-height: 75px;
+    padding: 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightcoral;
+    height: 60px;
+    padding: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 0px 15px;
+}
