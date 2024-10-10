@@ -25,34 +25,79 @@
         </section>
 		<section>
 			<form action="">
-				<label for="nombre">Nombre</label>
-				<input type="text" name="nombre">
-				<br>
-				<label for="correo">Correo electrónico</label>
-				<input type="email">
-				<br>
-				<label for="mensaje">Mensaje</label>
-				<textarea name="mensaje" id=""></textarea>
+				<div class="form-input">
+					<label for="nombre">Nombre</label>
+					<input type="text" name="nombre" placeholder="ej. Martín Morgan">
+				</div>
+				
+				<div class="form-input">
+					<label for="correo">Correo electrónico</label>
+					<input type="email" placeholder="ej. martinmorgan@gmail.com">	
+				</div>
+				<div class="form-input">
+					<label for="mensaje">Mensaje</label>
+					<textarea name="mensaje" id=""></textarea>
+				</div>
+				<div class="form-input">
+					<input type="submit">
+				</div>
 			</form>
 		</section>
 		<section class="productos">
-			<div class="card-producto">
-				Lorem ipsum dolor sit amet.
+			<div class="card-producto completado">
+				1. Estructura Básica de HTML. <br>
+				● Estructura semántica: El HTML debe estar
+				dividido en las etiquetas semánticas principales:
+				header, nav, main, section, footer. <br>
+				● README.md: Incluir un archivo que explique
+				brevemente el propósito de la página.
 			</div>
 			<div class="card-producto">
-				Lorem ipsum dolor sit amet.
+				2. Formulario de Contacto. <br>
+				● Formulario funcional: Crear un formulario
+				de contacto con campos para nombre,
+				correo electrónico y mensaje, utilizando
+				Formspree para manejar el envío de datos.
 			</div>
 			<div class="card-producto">
-				Lorem ipsum dolor sit amet.
+				3. Estilos Básicos Aplicados con CSS <br>
+					● Archivo styles.css: El proyecto debe contar con un
+					archivo CSS externo que incluya: <br>
+					○ Estilos básicos aplicados a las secciones de
+					header, footer y lista de navegación. <br>
+					○ Fuentes de Google Fonts correctamente
+					implementadas. <br>
+					○ Propiedades de background aplicadas en
+					alguna sección de la página (color, imagen,
+					degradado, etc.).
+			</div>
+		</section>
+		<section class="productos">
+			<div class="card-producto">
+				4. Diseño Responsivo con Flexbox y Grid <br>
+					● Sección "Productos": Organizada en cards de forma
+					responsiva utilizando Flexbox. <br>
+					● Sección "Reseñas": Organizada utilizando Grid, con una
+					distribución lógica y estética. <br>
+					● Sección "Contacto": Debe ser responsiva mediante el uso
+					de Media Queries para adaptarse a diferentes tamaños de
+					pantalla.
 			</div>
 			<div class="card-producto">
-				Lorem ipsum dolor sit amet.
+				5. Contenido Multimedia y Navegación <br>
+					● Multimedia: deberá incluir archivos multimedia
+					(imagenes, video o iframe) correctamente integrado
+					en la página. <br>
+					● Lista de navegación: Implementar una lista
+					desordenada con enlaces que simulen una
+					navegación interna (Inicio, Productos, Contacto,
+					etc.). 
 			</div>
-			<div class="card-producto">
-				Lorem ipsum dolor sit amet.
-			</div>
-			<div class="card-producto">
-				Lorem ipsum dolor sit amet.
+			<div class="card-producto completado">
+				6. Subida del Proyecto. <br>
+					● El proyecto debe estar subido a un hosting gratuito
+					(Netlify o GitHub Pages), con una URL funcional
+					para visualizar el sitio.
 			</div>
 		</section>
     </main>

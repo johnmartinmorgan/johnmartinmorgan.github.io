@@ -38,16 +38,40 @@ nav ul li {
     padding: 0px 15px;
 }
 
+form {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+div.form-input {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+label {
+    padding-bottom: 6px;
+}
+
 section.productos {
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
 }
 
 div.card-producto {
-    background-color: lightseagreen;
-    color: white;
+    background-color: lightgray;
+    color: black;
     margin: 15px;
     padding: 15px;
     height: fit-content;
     box-shadow: 5px 5px rgba(0,0,0,.2);
+    min-height: 400px;
+}
+
+div.completado {
+    background-image: linear-gradient(green, lime);
+    color: white;
 }
