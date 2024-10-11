@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --federal-blue: #16044F;
+    --aquamarine: #00EFAC;
+    --indigo: #6A0AFE;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Barlow', sans-serif;
-}
-
-body {
-    background-color: lightyellow;
 }
 
 header {
@@ -24,7 +26,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lightseagreen;
+    background-color: var(--federal-blue);
     height: 60px;
     padding: 30px;
 }
@@ -36,6 +38,7 @@ nav ul {
 
 nav ul li {
     padding: 0px 15px;
+    color: white;
 }
 
 form {
@@ -55,23 +58,54 @@ label {
     padding-bottom: 6px;
 }
 
-section.productos {
+section.intro {
     display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #6A0AFE;
+    color: white;
+    padding: 20px;
 }
 
-div.card-producto {
-    background-color: lightgray;
+section.intro div {
+    margin: 5px;
+}
+
+section.intro h2 {
+    font-size: x-large;
+}
+
+section.intro p {
+    font-size: large;
+}
+
+section.productos {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-shrink: ;
+    flex-basis: ; */
+    align-self: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+
+div.producto {
+    background-color: white;
     color: black;
     margin: 15px;
     padding: 15px;
+    flex-grow: 1;
+    min-width: 200px;
+    max-width: 300px;
     height: fit-content;
-    box-shadow: 5px 5px rgba(0,0,0,.2);
-    min-height: 400px;
+    border: 1px var(--federal-blue) solid;
+    box-shadow: 5px 5px var(--aquamarine);
 }
 
-div.completado {
-    background-image: linear-gradient(green, lime);
-    color: white;
+img.img-producto {
+    max-width: 100%;
+    
 }
