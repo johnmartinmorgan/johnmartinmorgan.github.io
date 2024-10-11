@@ -99,7 +99,6 @@ div.producto {
     padding: 15px;
     flex-grow: 1;
     min-width: 200px;
-    max-width: 300px;
     height: fit-content;
     border: 1px var(--federal-blue) solid;
     box-shadow: 5px 5px var(--aquamarine);
@@ -108,4 +107,8 @@ div.producto {
 img.img-producto {
     max-width: 100%;
     
+}
+
+h3 {
+    color: var(--federal-blue);
 }
