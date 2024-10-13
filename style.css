@@ -80,6 +80,8 @@ section.intro p {
     font-size: large;
 }
 
+/* SECCIÓN PRODUCTOS */
+
 section.productos {
     display: flex;
     flex-wrap: wrap;
@@ -97,8 +99,9 @@ div.producto {
     color: black;
     margin: 15px;
     padding: 15px;
-    flex-grow: 1;
+    flex-grow: 1; /* "Estira" la columna */
     min-width: 200px;
+    border-radius: 10px;
     height: fit-content;
     border: 1px var(--federal-blue) solid;
     box-shadow: 5px 5px var(--aquamarine);
@@ -109,6 +112,53 @@ img.img-producto {
     
 }
 
-h3 {
-    color: var(--federal-blue);
+/* SECCIÓN RESEÑAS */
+
+section.resenas {
+    display: grid;
+    padding: 50px 15px;
+    gap: 15px;
+    grid-template-areas: 
+    "resena-1 resena-2 resena-3"
+    "resena-1 resena-4 resena-4";
+}
+
+div.resena {
+    background-color: #16044F;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+div.resena h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+div.resena-1 {
+    grid-area: resena-1;
+}
+
+div.resena-2 {
+    grid-area: resena-2;
+}
+
+div.resena-3 {
+    grid-area: resena-3;
+}
+
+div.resena-4 {
+    grid-area: resena-4;
+}
+
+div.usuario {
+    display: flex;
+}
+
+img.img-usuario {
+    border-radius: 100%;
+    margin-right: 15px;
 }
