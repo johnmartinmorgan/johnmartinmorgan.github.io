@@ -45,11 +45,12 @@ nav ul {
     list-style-type: none;
 }
 
-nav ul li {
+nav ul li a {
     padding: 0px 15px;
     font-size: large;
     font-weight: bold;
     color: white;
+    text-decoration: none;
 }
 
 form {
@@ -265,9 +266,9 @@ img.img-usuario {
     margin-right: 15px;
 }
 
-/* SECCION CONTACTO */
+/* FOOTER CONTACTO */
 
-section.contacto {
+footer.contacto {
     display: grid;
     max-width: 1280px;
     margin: 0 auto;
@@ -281,7 +282,7 @@ section.contacto {
     "direccion";
 }
 
-section.contacto > div {
+footer.contacto > div {
     background-color: var(--federal-blue);
     color: white;
     padding: 15px;
@@ -323,7 +324,7 @@ div.direccion {
         "resena-1 resena-2"
         "resena-3 resena-4";
     }
-    section.contacto {
+    footer.contacto {
         grid-template-areas: 
         "brief telefono"
         "brief mail"
@@ -337,7 +338,7 @@ div.direccion {
         "resena-1 resena-2 resena-3"
         "resena-1 resena-4 resena-4";
     }
-    section.contacto {
+    footer.contacto {
         grid-template-areas: 
         "brief telefono mail"
         "brief telefono direccion";
@@ -345,7 +346,7 @@ div.direccion {
 }
 
 @media (min-width: 1200px) {
-    section.contacto {
+    footer.contacto {
         grid-template-areas: 
         "brief telefono mail direccion";
     }

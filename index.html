@@ -20,10 +20,18 @@
     </header>
     <nav>
         <ul>
-            <li>Inicio</li>
-            <li>Producto</li>
-            <li>Reseñas</li>
-            <li>Contacto</li>
+            <li>
+				<a href="/">Inicio</a>
+			</li>
+            <li>
+				<a href="#productos">Productos</a>
+			</li>
+            <li>
+				<a href="#reseñas">Reseñas</a>
+			</li>
+            <li>
+				<a href="#contacto">Contacto</a>
+			</li>
         </ul>
     </nav>
     <main>
@@ -66,7 +74,7 @@
 				<p>Organizada en cards de forma responsiva utilizando Flexbox.</p>
 			</div>
 		</section>
-		<section class="productos">
+		<section id="productos" class="productos">
 			<div class="producto">
 				<img class="img-producto" src="https://placehold.co/200" alt="">
 				<h3 class="nombre-producto">Título del producto #1</h3>
@@ -102,7 +110,7 @@
 				<p>Organizada utilizando Grid, con una distribución lógica y estética.</p>
 			</div>
 		</section>
-		<section class="resenas">
+		<section id="reseñas" class="resenas">
 			<div class="resena resena-1">
 				<div class="usuario">
 					<img class="img-usuario" src="img/bici.jpeg" width=50 height=50  alt="">
@@ -162,7 +170,7 @@
 				<p>Responsiva mediante el uso de Media Queries para adaptarse a diferentes tamaños de pantalla.</p>
 			</div>
 		</section>
-		<section class="contacto">
+		<footer id="contacto" class="contacto">
 			<div class="brief">
 				<h2>Práctica de CSS Grid</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi natus nemo dolore nobis sequi doloribus nihil quis eaque harum fugiat.</p>
@@ -179,7 +187,7 @@
 				<h2>Dirección</h2>
 				<p>Calle Siempreviva 123</p>
 			</div>
-		</section>
+		</footer>
     </main>
     <footer></footer>
 </body>
