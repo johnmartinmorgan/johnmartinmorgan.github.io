@@ -339,11 +339,16 @@ div.direccion {
     }
     section.contacto {
         grid-template-areas: 
-        "brief telefono mail direccion";
+        "brief telefono mail"
+        "brief telefono direccion";
     }
 }
 
 @media (min-width: 1200px) {
+    section.contacto {
+        grid-template-areas: 
+        "brief telefono mail direccion";
+    }
 }
 
 @media (min-width: 1400px) {
