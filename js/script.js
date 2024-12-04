@@ -2,6 +2,41 @@
     // 1. Implementar una función que verifique si todos los
     // campos del formulario de contacto están
     // completos, mostrando un mensaje en la consola.
+
+    function verificarFormularioCompleto(formularioId) {
+        const formulario = document.getElementById(formularioId);
+        let camposIncompletos = false;
+    
+        for (let campo of formulario.elements) {
+            if (campo.type !== "submit" && campo.type !== "button" && campo.value.trim() === "") {
+                console.log(`El campo "${campo.name || campo.id}" está vacío.`);
+                camposIncompletos = true;
+            }
+        }
+    
+        if (!camposIncompletos) {
+            console.log("Todos los campos están completos.");
+            limpiarFormulario(formulario);
+        } else {
+            console.log("Hay campos incompletos en el formulario.");
+            limpiarFormulario(formulario);
+        }
+    }
+
+    function limpiarFormulario(formulario) {
+        for (let campo of formulario.elements) {
+            if (campo.type !== "submit" && campo.type !== "button") {
+                campo.value = "";
+            }
+        }
+    }
+    
+    document.getElementById("formContacto").addEventListener("submit", function (e) {
+        e.preventDefault(); // Evitar el envío para pruebas
+        verificarFormularioCompleto("formContacto");
+    });
+    
+
     // 2. Crear un ciclo que genere dinámicamente una
     // lista de productos disponibles y los muestre en la
     // consola

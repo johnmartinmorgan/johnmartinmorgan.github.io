@@ -47,6 +47,10 @@
     <main>
 
 		<!-- FORMULARIO -->
+		 <div style="display: block; width: 100%; text-align: center;">
+			<img src="img/diagrama-1.png" width="500" alt="">
+		 </div>
+		
 		<section class="formulario">
 			<form action="https://formspree.io/f/xpwzwoyk" method="POST">
 				<div class="nombre">
@@ -60,12 +64,20 @@
 				<div class="mensaje">
 					<label for="mensaje">Mensaje</label>
 					<textarea name="mensaje" id=""></textarea>
-					
+
 				</div>
 				<div class="submit">
 					<input type="submit" name="" value="Enviar" id="">
 				</div>
 			</form>
+			
+			<form id="formContacto">
+				<input type="text" id="nombre" name="nombre" placeholder="Nombre">
+				<input type="email" id="email" name="email" placeholder="Email">
+				<textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+				<button type="submit">Enviar</button>
+			</form>			
+
 		</section>
 
 		<!-- PRODUCTOS -->
