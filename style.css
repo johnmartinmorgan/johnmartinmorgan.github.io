@@ -31,7 +31,7 @@ p.header-descripcion {
     font-style: italic;
 }
 
-nav {
+/* nav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,6 +51,19 @@ nav ul li a {
     font-weight: bold;
     color: white;
     text-decoration: none;
+} */
+
+.navbar {
+    background-color: var(--federal-blue) !important;
+}
+
+.navbar-brand, a.nav-link {
+    color: white !important;
+}
+  
+/* Cambiar el color del menú hamburguesa, gentileza de ChatGPT */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
 form {

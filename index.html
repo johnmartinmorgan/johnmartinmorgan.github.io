@@ -6,6 +6,7 @@
     <title>Martín Morgan - Proyecto Final Integrador</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -18,36 +19,34 @@
 		</div>
         
     </header>
-    <nav>
-        <ul>
-            <li>
-				<a href="/">Inicio</a>
-			</li>
-            <li>
-				<a href="#productos">Productos</a>
-			</li>
-            <li>
-				<a href="#reseñas">Reseñas</a>
-			</li>
-            <li>
-				<a href="#contacto">Contacto</a>
-			</li>
-			<li>
-				<a href="javascript.html">JS</a>
-			</li>
-        </ul>
-    </nav>
+	<!-- BOOTSTRAP NAVBAR -->
+	<nav class="navbar navbar-expand-md text-white">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#productos">Productos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#reseñas">Reseñas</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contacto">Contacto</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
     <main>
 
 		<!-- FORMULARIO -->
-		<section class="intro">
-			<div>
-				<h2>Formulario de contacto</h2>
-			</div>
-			<div>
-				<p>Formulario de contacto con campos para nombre, correo electrónico y mensaje, utilizando Formspree para manejar el envío de datos.</p>
-			</div>
-		</section>
 		<section class="formulario">
 			<form action="https://formspree.io/f/xpwzwoyk" method="POST">
 				<div class="nombre">
@@ -61,6 +60,7 @@
 				<div class="mensaje">
 					<label for="mensaje">Mensaje</label>
 					<textarea name="mensaje" id=""></textarea>
+					
 				</div>
 				<div class="submit">
 					<input type="submit" name="" value="Enviar" id="">
@@ -69,50 +69,34 @@
 		</section>
 
 		<!-- PRODUCTOS -->
-		<section class="intro">
-			<div>
-				<h2>Sección "Productos"</h2>
-			</div>
-			<div>
-				<p>Organizada en cards de forma responsiva utilizando Flexbox.</p>
-			</div>
-		</section>
 		<section id="productos" class="productos">
 			<div class="producto">
 				<img class="img-producto" src="https://placehold.co/200" alt="">
 				<h3 class="nombre-producto">Título del producto #1</h3>
-				<p class="descripcion-producto">Descripción de producto #1</p>
+				<p class="descripcion-producto">Implementar un evento click que muestra la descripción ampliada del producto que clickeamos.</p>
 				<span class="precio-producto">$NNN.N</span>
 			</div>
 			<div class="producto">
 				<img class="img-producto" src="https://placehold.co/200" alt="">
 				<h3 class="nombre-producto">Título del producto #1</h3>
-				<p class="descripcion-producto">Descripción de producto #1</p>
+				<p class="descripcion-producto">Implementar un evento click que muestra la descripción ampliada del producto que clickeamos.</p>
 				<span class="precio-producto">$NNN.N</span>
 			</div>
 			<div class="producto">
 				<img class="img-producto" src="https://placehold.co/200" alt="">
 				<h3 class="nombre-producto">Título del producto #1</h3>
-				<p class="descripcion-producto">Descripción de producto #1</p>
+				<p class="descripcion-producto">Implementar un evento click que muestra la descripción ampliada del producto que clickeamos.</p>
 				<span class="precio-producto">$NNN.N</span>
 			</div>
 			<div class="producto">
 				<img class="img-producto" src="https://placehold.co/200" alt="">
 				<h3 class="nombre-producto">Título del producto #1</h3>
-				<p class="descripcion-producto">Descripción de producto #1</p>
+				<p class="descripcion-producto">Implementar un evento click que muestra la descripción ampliada del producto que clickeamos.</p>
 				<span class="precio-producto">$NNN.N</span>
 			</div>
 		</section>
 
 		<!-- RESEÑAS -->
-		<section class="intro">
-			<div>
-				<h2>Sección "Reseñas"</h2>
-			</div>
-			<div>
-				<p>Organizada utilizando Grid, con una distribución lógica y estética.</p>
-			</div>
-		</section>
 		<section id="reseñas" class="resenas">
 			<div class="resena resena-1">
 				<div class="usuario">
@@ -165,14 +149,6 @@
 		</section>
 
 		<!-- CONTACTO -->
-		<section class="intro">
-			<div>
-				<h2>Sección "Contacto"</h2>
-			</div>
-			<div>
-				<p>Responsiva mediante el uso de Media Queries para adaptarse a diferentes tamaños de pantalla.</p>
-			</div>
-		</section>
 		<footer id="contacto" class="contacto">
 			<div class="brief">
 				<h2>Práctica de CSS Grid</h2>
@@ -192,6 +168,9 @@
 			</div>
 		</footer>
     </main>
+
     <footer></footer>
+	<script src="js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
