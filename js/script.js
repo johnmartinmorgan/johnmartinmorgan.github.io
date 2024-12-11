@@ -3,43 +3,45 @@
     // campos del formulario de contacto están
     // completos, mostrando un mensaje en la consola.
 
-    function verificarFormularioCompleto(formularioId) {
-        const formulario = document.getElementById(formularioId);
-        let camposIncompletos = false;
-    
-        for (let campo of formulario.elements) {
-            if (campo.type !== "submit" && campo.type !== "button" && campo.value.trim() === "") {
-                console.log(`El campo "${campo.name || campo.id}" está vacío.`);
-                camposIncompletos = true;
-            }
-        }
-    
-        if (!camposIncompletos) {
-            console.log("Todos los campos están completos.");
-            limpiarFormulario(formulario);
-        } else {
-            console.log("Hay campos incompletos en el formulario.");
-            limpiarFormulario(formulario);
+function verificarFormulario(formContacto) {
+    const formulario = document.getElementById(formContacto);
+    let camposIncompletos = false;
+    for (let campo of formulario.elements) {
+        if (campo.type !== "submit" && campo.type !== "button" && campo.value.trim() === "") {
+            // Si incluso borrando todos los espacios con trim() no queda contenido, el campo está vacío.
+            console.log(`El campo "${campo.name || campo.id}" está vacío.`);
+            camposIncompletos = true;
         }
     }
-
-    function limpiarFormulario(formulario) {
-        for (let campo of formulario.elements) {
-            if (campo.type !== "submit" && campo.type !== "button") {
-                campo.value = "";
-            }
+    if (!camposIncompletos) {
+        console.log("Todos los campos están completos.");
+        limpiarCampos(formulario);
+    } else {
+        console.log("Hay campos incompletos en el formulario.");
+        limpiarCampos(formulario);
+    }
+}
+function limpiarCampos(formulario) {
+    for (let campo of formulario.elements) {
+        if (campo.type !== "submit" && campo.type !== "button") {
+            campo.value = "";
         }
     }
-    
-    document.getElementById("formContacto").addEventListener("submit", function (e) {
-        e.preventDefault(); // Evitar el envío para pruebas
-        verificarFormularioCompleto("formContacto");
-    });
-    
+}
+document.getElementById("formContacto").addEventListener("submit", function (e) {
+    e.preventDefault(); // Evitar el envío para pruebas
+    verificarFormulario("formContacto");
+});
 
-    // 2. Crear un ciclo que genere dinámicamente una
-    // lista de productos disponibles y los muestre en la
-    // consola
+// 2. Crear un ciclo que genere dinámicamente una
+// lista de productos disponibles y los muestre en la
+// consola
+
+const lista = ["Hoodies", "Camperas", "Jeans", "Beanies"];
+lista.forEach(producto => {
+    console.log(producto);
+});
+
 
 // Manipulación Básica del DOM y Eventos
     // 1. Implementar un evento click que muestra la
