@@ -218,6 +218,14 @@ p.descripcion-producto {
     padding-bottom: 15px;
 }
 
+button#mostrar {
+    background-color: var(--aquamarine);
+    border: 0;
+    padding: 5px 7px;
+    color: var(--federal-blue);
+    border-radius: 5px;
+}
+
 span.precio-producto {
     font-weight: bold;
     font-size: x-large;

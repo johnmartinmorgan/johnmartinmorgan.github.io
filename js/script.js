@@ -1,4 +1,5 @@
 // Condicionales y Ciclos
+
     // 1. Implementar una función que verifique si todos los
     // campos del formulario de contacto están
     // completos, mostrando un mensaje en la consola.
@@ -8,8 +9,10 @@ function verificarFormulario(formContacto) {
     let camposIncompletos = false;
     for (let campo of formulario.elements) {
         if (campo.type !== "submit" && campo.type !== "button" && campo.value.trim() === "") {
+
             // Si incluso borrando todos los espacios con trim() no queda contenido, el campo está vacío.
             console.log(`El campo "${campo.name || campo.id}" está vacío.`);
+
             camposIncompletos = true;
         }
     }
@@ -29,25 +32,40 @@ function limpiarCampos(formulario) {
     }
 }
 document.getElementById("formContacto").addEventListener("submit", function (e) {
-    e.preventDefault(); // Evitar el envío para pruebas
+    // e.preventDefault();
     verificarFormulario("formContacto");
 });
 
-// 2. Crear un ciclo que genere dinámicamente una
-// lista de productos disponibles y los muestre en la
-// consola
+    // 2. Crear un ciclo que genere dinámicamente una
+    // lista de productos disponibles y los muestre en la
+    // consola
 
-const lista = ["Hoodies", "Camperas", "Jeans", "Beanies"];
-lista.forEach(producto => {
-    console.log(producto);
+const productos = [
+    { id: 1, nombre: "Laptop", precio: 1500 },
+    { id: 2, nombre: "Auriculares", precio: 200 },
+    { id: 3, nombre: "Mouse", precio: 50 },
+    { id: 4, nombre: "Gamepad", precio: 75 },
+    { id: 5, nombre: "Teclado", precio: 100 }
+];
+  
+console.log("Lista de productos:");
+    productos.forEach(producto => {
+    console.log(`ID: ${producto.id}, Nombre: ${producto.nombre}, Precio: $${producto.precio}`);
 });
 
-
 // Manipulación Básica del DOM y Eventos
+
     // 1. Implementar un evento click que muestra la
     // descripción ampliada del producto que clickeamos.
+
+function mostrarDescripcion() {
+    document.getElementById('descripcion').style.display = 'block';
+}
+
     // 2. Crear un listado de productos incluidos en nuestro
     // HTML generado por medio de una función en Js.
+
+
 
 // Funciones Modulares
 //     1. Crear una función que genere un array de

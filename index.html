@@ -82,28 +82,38 @@
 			<div class="producto">
 				<img class="img-producto" src="https://placehold.co/200" alt="">
 				<h3 class="nombre-producto">Título del producto #1</h3>
-				<p class="descripcion-producto">Implementar un evento click que muestra la descripción ampliada del producto que clickeamos.</p>
+				<button onclick="mostrarDescripcion()" id="mostrar" href="">Mostrar descripción</button>
+				<p id="descripcion" style="display: none;">Implementar un evento click que muestra la descripción ampliada del producto que clickeamos.</p>
 				<span class="precio-producto">$NNN.N</span>
 			</div>
 			<div class="producto">
 				<img class="img-producto" src="https://placehold.co/200" alt="">
 				<h3 class="nombre-producto">Título del producto #1</h3>
-				<p class="descripcion-producto">Implementar un evento click que muestra la descripción ampliada del producto que clickeamos.</p>
+				<button onclick="mostrarDescripcion()" id="mostrar" href="">Mostrar descripción</button>
+				<p id="descripcion" style="display: none;">Implementar un evento click que muestra la descripción ampliada del producto que clickeamos.</p>
 				<span class="precio-producto">$NNN.N</span>
 			</div>
 			<div class="producto">
 				<img class="img-producto" src="https://placehold.co/200" alt="">
 				<h3 class="nombre-producto">Título del producto #1</h3>
-				<p class="descripcion-producto">Implementar un evento click que muestra la descripción ampliada del producto que clickeamos.</p>
+				<button onclick="mostrarDescripcion()" id="mostrar">Mostrar descripción</button>
+				<p id="descripcion" style="display: none;">Implementar un evento click que muestra la descripción ampliada del producto que clickeamos.</p>
 				<span class="precio-producto">$NNN.N</span>
 			</div>
 			<div class="producto">
 				<img class="img-producto" src="https://placehold.co/200" alt="">
 				<h3 class="nombre-producto">Título del producto #1</h3>
-				<p class="descripcion-producto">Implementar un evento click que muestra la descripción ampliada del producto que clickeamos.</p>
+				<button onclick="mostrarDescripcion()" id="mostrar">Mostrar descripción</button>
+				<p id="descripcion" style="display: none;">Implementar un evento click que muestra la descripción ampliada del producto que clickeamos.</p>
 				<span class="precio-producto">$NNN.N</span>
 			</div>
 		</section>
+
+		<script>
+			function mostrarDescripcion() {
+				document.getElementById('descripcion').style.display = 'block';
+			}
+		</script>
 
 		<!-- RESEÑAS -->
 		<section id="reseñas" class="resenas">
