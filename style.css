@@ -202,8 +202,8 @@ div.producto {
 }
 
 img.img-producto {
-    width: auto;
-    height: 100%;
+    width: 200px;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -226,7 +226,7 @@ button#mostrar {
     border-radius: 5px;
 }
 
-span.precio-producto {
+p.precio-producto {
     font-weight: bold;
     font-size: x-large;
     color: var(--federal-blue);

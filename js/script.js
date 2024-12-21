@@ -68,13 +68,40 @@ function mostrarDescripcion() {
 
 
 // Funciones Modulares
-//     1. Crear una función que genere un array de
+//     1. Crear una función que genere un array de 
 //     productos y los muestre en la página utilizando
 //     una plantilla HTML dinámica.
 
 // Asincronía y Consumo de API REST
 //     1. Utilización de fetch para obtener datos de una API
 //     pública y mostrarlos en la sección main del HTML.
+
+fetch('https://fakestoreapi.com/products')
+.then((response) => response.json())
+.then((data) => {
+
+const productos = document.getElementById("productos");
+data.forEach((producto) => {
+    productos.innerHTML += `
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card border-0 shadow h-100">
+                <img src="${producto.image}" class="card-img-top" alt="..." height=200>
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title">${producto.title}</h5>
+                    <div>
+                        <p class="precio-producto">$${producto.price}</p>
+                        <p id="descripcion" class="card-text" style="display: none">Implementar un evento click que muestra la descripción ampliada del producto que clickeamos.</p>
+                        <button onclick="mostrarDescripcion()" class="btn btn-primary">Mostrar descripción</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+});
+})
+
+.catch((error) => console.error("Error al obtener productos:", error));
+
 //     2. Procesar los datos obtenidos de la API para
 //     organizarlos en cards, aplicando Flexbox o Grid para
 //     mantener la coherencia en el diseño.
